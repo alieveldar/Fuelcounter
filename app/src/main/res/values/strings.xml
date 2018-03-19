@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Fuel counter</string>
+    <string name="add_data_button">Внести данные</string>
+</resources>
