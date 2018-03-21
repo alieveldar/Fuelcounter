@@ -7,10 +7,13 @@
     tools:context="com.aliev.fuelcounter.MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="16dp"
         android:orientation="vertical"
-        >
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="23dp">
 
         <EditText
             android:id="@+id/add_fuel"
@@ -20,16 +23,22 @@
         <Button
             android:id="@+id/add_data_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:text="@string/add_data_button" />
+
 
         <DatePicker
             android:id="@+id/data_fuel_calendar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:calendarViewShown="false">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:calendarViewShown="false"
+
+            >
+
 
         </DatePicker>
+
 
     </LinearLayout>
 
