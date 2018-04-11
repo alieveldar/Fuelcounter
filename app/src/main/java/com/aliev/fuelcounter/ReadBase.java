@@ -15,6 +15,7 @@ public class ReadBase {
         FeedReaderDbHelper mDbHelper = new FeedReaderDbHelper(context);
         SQLiteDatabase db = mDbHelper.getReadableDatabase();
         String[] projection = {
+                FeedReaderContract.FeedEntry._ID,
                 FeedReaderContract.FeedEntry.COLUMN_LiTRES,
                 FeedReaderContract.FeedEntry.COLUMN_DATE_DAY,
                 FeedReaderContract.FeedEntry.COLUMN_NAME_MONTH,

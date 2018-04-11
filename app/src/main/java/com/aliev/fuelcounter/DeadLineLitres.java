@@ -11,6 +11,7 @@ public class DeadLineLitres {
 
     public String DeadLineLitres(Cursor cursor, int month){
         String balance;
+        month = month +1;
         Integer fuelbalance = 0;
         cursor.moveToFirst();
         for (int x = 0; x < cursor.getCount(); x++ ) {

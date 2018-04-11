@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Fuel counter</string>
     <string name="add_data_button">Внести данные</string>
+    <string name="enter_Fuel">Введите количество бензина! Поле не должно быть пустым!</string>
 </resources>

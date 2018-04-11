@@ -20,7 +20,7 @@ public class DatabaseFill {
         SQLiteDatabase db = mDbHelper.getWritableDatabase();
         values.put(FeedReaderContract.FeedEntry.COLUMN_LiTRES, litres);
         values.put(FeedReaderContract.FeedEntry.COLUMN_DATE_DAY, day);
-        values.put(FeedReaderContract.FeedEntry.COLUMN_NAME_MONTH, month);
+        values.put(FeedReaderContract.FeedEntry.COLUMN_NAME_MONTH, month + 1);
         values.put(FeedReaderContract.FeedEntry.COLUMN_NAME_YEAR, year);
         db.insert(FeedReaderContract.FeedEntry.TABLE_NAME, null, values);
         Log.d("Added", "Data is added!!!" + values);
